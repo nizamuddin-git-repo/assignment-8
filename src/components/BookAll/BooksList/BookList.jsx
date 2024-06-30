@@ -11,6 +11,25 @@ const BookList = () => {
   const books = useLoaderData();
 
   const [bookRead, setbookRead] = useState([]);
+  const [displayBook, setDisplayBook ] = useState([])
+
+  const handleBook = (sote) => {
+    if(sote === 'all'){
+      setDisplayBook(bookRead);
+    }
+    else if (sote === 'rating'){
+      const rating = bookRead.filter(book => book.rating === '3.81');
+      setDisplayBook(rating);
+    }
+    else if (sote === 'totalPages'){
+      const totalPages = bookRead.filter(book => book.totalPages === '332')
+      setDisplayBook(totalPages);
+    }
+    else if (sote === 'yearOfPublishing'){
+      const yearOfPublishing = bookRead.filter(book => book.yearOfPublishing === '1979')
+      setDisplayBook(yearOfPublishing)
+    }
+  }
 
   useEffect(() => {
     const storBook = getStorBook();
@@ -18,23 +37,30 @@ const BookList = () => {
       const bookStor = books.filter((book) => storBook.includes(book.id));
       //  console.log(bookStor, storBook, );
       setbookRead(bookStor);
+      setDisplayBook(bookStor);
     }
   }, []);
 
   return (
     <div className="max-w-7xl mx-auto">
-      <h2 className="text-center text-4xl dark:bg-gray-100 mt-10 p-2 rounded-lg">
-        Books {bookRead.length}
+      <h2 className="text-center text-4xl dark:bg-gray-100 mt-10 p-2 rounded-lg font-bold">
+        Books 
       </h2>
       <div className="flex justify-center mt-8">
         <details className="dropdown">
           <summary className="btn m-1 bg-success text-white">Sort By</summary>
           <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-            <li>
-              <a>Item 1</a>
+            <li onClick={()=> handleBook('all')}>
+              <a>All</a>
             </li>
-            <li>
-              <a>Item 2</a>
+            <li onClick={()=> handleBook('rating')}>
+              <a>Rating</a>
+            </li>
+            <li onClick={()=> handleBook('totalPages')}>
+              <a>Number of Pages</a>
+            </li>
+            <li onClick={()=> handleBook('yearOfPublishing')}>
+              <a>Publisher</a>
             </li>
           </ul>
         </details>
@@ -92,7 +118,7 @@ const BookList = () => {
       <Outlet></Outlet>
       {/* Book addd */}
       <div className="mt-6">
-        {bookRead.map((book) => (
+        {displayBook.map((book) => (
           <div key={book.id}>
             <div className="card card-side bg-base-100 shadow-xl mt-6">
               <figure>
