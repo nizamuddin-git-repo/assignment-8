@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "To Kill a Mockingbird",
+    "description": "A novel by Harper Lee, set in the American South during the 1930s, addressing serious issues of rape and racial inequality.",
+    "author": "Harper Lee",
+    "img": "https://i.ibb.co/qnrD6KX/book-1.png",
+    "hashtags": ["classics", "racism", "American literature"],
+    "totalPages": 324,
+    "publisher": "J.B. Lippincott & Co.",
+    "yearOfPublishing": 1960,
+    "rating": 4.28
+  },
+  {
+    "id": 2,
+    "title": "Pride and Prejudice",
+    "description": "George Orwell's dystopian novel depicting a totalitarian regime and its impact on individual freedom.",
+    "author": "George Orwell",
+    "img": "https://i.ibb.co/WP7rVqt/book-2.png",
+    "hashtags": ["dystopian", "surveillance", "political"],
+    "totalPages": 328,
+    "publisher": "Secker & Warburg",
+    "yearOfPublishing": 1949,
+    "rating": 4.16
+  },
+  {
+    "id": 3,
+    "title": "The Great Gatsby",
+    "description": "F. Scott Fitzgerald's exploration of decadence, idealism, resistance to change, social upheaval, and excess.",
+    "author": "F. Scott Fitzgerald",
+    "img": "https://i.ibb.co/s93F7LH/book-3.png",
+    "hashtags": ["American", "Roaring Twenties", "wealth"],
+    "totalPages": 180,
+    "publisher": "Charles Scribner's Sons",
+    "yearOfPublishing": 1925,
+    "rating": 3.89
+  },
+  {
+    "id": 4,
+    "title": "Pride and Prejudice",
+    "description": "Jane Austen's classic novel about the misunderstandings, romantic entanglements, and happiness in the lives of the Bennet family.",
+    "author": "Jane Austen",
+    "img": "https://i.ibb.co/cg1Cg4J/book-4.png",
+    "hashtags": ["romance", "19th century literature", "British"],
+    "totalPages": 279,
+    "publisher": "T. Egerton, Whitehall",
+    "yearOfPublishing": 1813,
+    "rating": 4.25
+  },
+  {
+    "id": 5,
+    "title": "The Catcher in the Rye",
+    "description": "J.D. Salinger's novel about teenage angst and alienation, told by the unforgettable Holden Caulfield.",
+    "author": "J.D. Salinger",
+    "img": "https://i.ibb.co/8d9xymk/book-8.png",
+    "hashtags": ["coming of age", "American literature", "adolescence"],
+    "totalPages": 224,
+    "publisher": "Little, Brown and Company",
+    "yearOfPublishing": 1951,
+    "rating": 3.81
+  },
+  {
+    "id": 6,
+    "title": "Moby-Dick",
+    "description": "Herman Melville's epic tale of obsession and revenge, following the journey of the whaling ship Pequod and its crew.",
+    "author": "Herman Melville",
+    "img": "https://i.ibb.co/mRCGHYX/book-7.png",
+    "hashtags": ["classic literature", "whaling", "American"],
+    "totalPages": 624,
+    "publisher": "Richard Bentley",
+    "yearOfPublishing": 1851,
+    "rating": 3.52
+  },
+  {
+    "id": 7,
+    "title": "The Lord of the Rings",
+    "description": "J.R.R. Tolkien's epic fantasy trilogy depicting the quest to destroy the One Ring and save Middle-earth.",
+    "author": "J.R.R. Tolkien",
+    "img": "https://i.ibb.co/NZXq98p/book-6.png",
+    "hashtags": ["fantasy", "epic", "Middle-earth"],
+    "totalPages": 1178,
+    "publisher": "George Allen & Unwin",
+    "yearOfPublishing": 1954,
+    "rating": 4.49
+  },
+  {
+    "id": 8,
+    "title": "Harry Potter and the Philosopher's Stone",
+    "description": "J.K. Rowling's first novel in the Harry Potter series, introducing the magical world and the young wizard Harry Potter.",
+    "author": "J.K. Rowling",
+    "img": "https://i.ibb.co/LkhLWNN/book-5.png",
+    "hashtags": ["magic", "wizardry", "children's literature"],
+    "totalPages": 332,
+    "publisher": "Bloomsbury",
+    "yearOfPublishing": 1997,
+    "rating": 4.48
+  },
+  {
+    "id": 9,
+    "title": "The Hitchhiker's Guide to the Galaxy",
+    "description": "Douglas Adams' humorous science fiction series following the adventures of Arthur Dent, a hapless human who hitchhikes through the galaxy.",
+    "author": "Douglas Adams",
+    "img": "https://i.ibb.co/PT0b588/book-10.png",
+    "hashtags": ["science fiction", "humor", "space"],
+    "totalPages": 215,
+    "publisher": "Pan Books",
+    "yearOfPublishing": 1979,
+    "rating": 4.21
+  }
+]
