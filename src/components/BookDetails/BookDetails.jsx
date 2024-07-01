@@ -2,6 +2,7 @@ import { NavLink, useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { saveBook } from "../../assets/utility/localStor";
+import { Helmet } from "react-helmet-async";
 const BookDetails = () => {
   const books = useLoaderData();
   const { id } = useParams();
@@ -26,6 +27,11 @@ const BookDetails = () => {
 
   return (
     <div className="max-w-7xl mx-auto mt-10 flex gap-7">
+      <Helmet>
+        <title>
+          Book Details
+        </title>
+      </Helmet>
       <div className="w-2/4 bg-slate-200 p-10 rounded-xl">
         <div className="flex justify-center">
           <img className="w-2/4" src={img} alt="" />

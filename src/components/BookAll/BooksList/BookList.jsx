@@ -4,6 +4,7 @@ import { getStorBook } from "../../../assets/utility/localStor";
 import { IoLocationOutline,  } from "react-icons/io5";
 import { IoMdContacts } from "react-icons/io";
 import { MdContactPage } from "react-icons/md";
+import { Helmet } from "react-helmet-async";
 
 const BookList = () => {
   const [tabIndex, setTabIndex] = useState(0);
@@ -43,6 +44,11 @@ const BookList = () => {
 
   return (
     <div className="max-w-7xl mx-auto">
+      <Helmet>
+        <title>
+          Listed Book
+        </title>
+      </Helmet>
       <h2 className="text-center text-4xl dark:bg-gray-100 mt-10 p-2 rounded-lg font-bold">
         Books 
       </h2>
